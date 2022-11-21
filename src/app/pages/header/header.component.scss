@@ -1,0 +1,29 @@
+.header-container {
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-right: 0px;
+}
+
+.header-action {
+  margin: 0px 8px;
+  padding: 0px 16px;
+  border-bottom: solid 1px var(--orange);
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--orange);
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .header-container  {
+    justify-content: flex-end;
+    margin-right: 64px;
+  }
+}

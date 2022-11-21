@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  font-family: monospace;
+  --orange: #EF8354;
+  --grey: #4f5d75;
+  --light-grey: #bfc0c0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  span {
+    font-size: 16px !important;
+    color: var(--orange);
+    vertical-align: middle;
+  }
+}
+
+a:link {
+  text-decoration: underline var(--orange);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

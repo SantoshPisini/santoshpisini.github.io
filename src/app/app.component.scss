@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 80vh;
+  padding: 0px;
+}
+
+.main {
+  padding: 0px 16px;
+}
+
+.main-email {}
+
+@media only screen and (min-width: 600px) {
+  .main {
+    padding: 0px 192px;
+  }
+
+  .main-email {
+    width: min-content;
+    // transform: rotate(270deg);
+    margin-left: -52px;
+    letter-spacing: 0.1em;
+
+    span {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 90px;
+      margin: 0px auto;
+      transform: rotate(270deg);
+      background-color: var(--orange);
+    }
+  }
+
+}
+
+.main-email-card {
+  display: flex;
+
+  a {
+    text-underline-offset: 4px;
+  }
+
+  hr {
+    transform: rotate(270deg);
+    border-color: var(--orange);
+  }
+
+}
