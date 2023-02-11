@@ -1,18 +1,24 @@
 .header-container {
+  // height: 32px;
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  margin-right: 0px;
+
   height: 32px;
   display: flex;
   flex-direction: row;
   align-content: center;
-  justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  margin-right: 0px;
+  justify-content: flex-end;
 }
 
 .header-action {
   margin: 0px 8px;
   padding: 0px 16px;
   border-bottom: solid 1px var(--orange);
+  transition: 0.5s;
+  text-align: center;
 
   &:hover {
     cursor: pointer;
@@ -22,7 +28,13 @@
 }
 
 @media only screen and (min-width: 600px) {
-  .header-container  {
+  .header-container {
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
     justify-content: flex-end;
     margin-right: 64px;
   }

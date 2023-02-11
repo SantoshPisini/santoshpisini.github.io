@@ -4,12 +4,10 @@ import { AnalyticsService } from './services/analytics.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit{
-  constructor(private analyticsService: AnalyticsService) { }
+export class AppComponent implements OnInit {
+  constructor(private analyticsService: AnalyticsService) {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

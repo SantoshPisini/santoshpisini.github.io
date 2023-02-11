@@ -11,9 +11,33 @@
 
 .main {
   padding: 0px 16px;
+  height: 100vh;
+  margin-top: 24px;
 }
 
-.main-email {}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-link {
+  &:hover {
+    color: var(--orange);
+  }
+}
+
+fa-icon {
+  font-size: 24px;
+}
+
+.main-social {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
 
 @media only screen and (min-width: 600px) {
   .main {
@@ -37,10 +61,20 @@
     }
   }
 
+  .footer {
+    flex-direction: row;
+  }
+
+
+  .main-social {
+    margin-top: 0px;
+  }
+
 }
 
 .main-email-card {
   display: flex;
+  font-size: 14px;
 
   a {
     text-underline-offset: 4px;

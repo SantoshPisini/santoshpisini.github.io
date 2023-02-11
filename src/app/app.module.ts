@@ -10,23 +10,41 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { environment } from 'src/environments/environment';
 import { AngularFireAnalyticsModule } from '@angular/fire/compat/analytics';
 import { AngularFireModule } from '@angular/fire/compat';
-
+import {
+  FaIconLibrary,
+  FontAwesomeModule,
+} from '@fortawesome/angular-fontawesome';
+import {
+  faStackOverflow,
+  faGithub,
+  faLinkedinIn,
+  faInstagram,
+  faTwitter,
+} from '@fortawesome/free-brands-svg-icons';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    AboutComponent,
-  ],
+  declarations: [AppComponent, HeaderComponent, AboutComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
+    FontAwesomeModule,
     BrowserAnimationsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireAnalyticsModule
+    AngularFireAnalyticsModule,
+    FontAwesomeModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {
+  constructor(library: FaIconLibrary) {
+    library.addIcons(
+      faStackOverflow,
+      faGithub,
+      faLinkedinIn,
+      faInstagram,
+      faTwitter
+    );
+  }
+}

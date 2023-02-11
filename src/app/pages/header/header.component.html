@@ -1,6 +1,8 @@
 <div class="header-container">
-    <div *ngFor="let item of navItems" class="header-action" (click)="scrollTo(item.sectionLink)">
-      <p>{{ item.text }}</p>
-    </div>
-  <div class="header-action"><p>Resume</p></div>
+  <div *ngFor="let item of navItems" class="header-action" (click)="scrollTo(item.sectionLink)">
+    <p>{{ item.text }}</p>
+  </div>
+  <div class="header-action" (click)="openResume()">
+    <p>Resume</p>
+  </div>
 </div>
