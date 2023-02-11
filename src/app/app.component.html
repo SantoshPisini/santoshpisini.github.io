@@ -10,14 +10,9 @@
       </div>
     </div>
     <div class="main-social">
-      <a class="social-link" href="https://github.com/santoshpisini" target="_blank"><fa-icon
-          [icon]="['fab', 'github']"></fa-icon></a>
-      <a class="social-link" href="https://www.linkedin.com/in/santoshpisini" target="_blank"><fa-icon
-          [icon]="['fab', 'linkedin-in']"></fa-icon></a>
-      <a class="social-link" href="https://www.instagram.com/santosh_pisini" target="_blank"><fa-icon
-          [icon]="['fab', 'instagram']"></fa-icon></a>
-      <a class="social-link" href="https://twitter.com/santosh_pisini" target="_blank"><fa-icon
-          [icon]="['fab', 'twitter']"></fa-icon></a>
+      <div *ngFor="let item of socialLinks">
+        <span class="social-link" (click)="openLink(item)"><fa-icon [icon]="['fab', item.faIcon]"></fa-icon></span>
+      </div>
     </div>
   </div>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AnalyticsService } from 'src/app/services/analytics.service';
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -13,7 +14,7 @@ export class HeaderComponent implements OnInit {
     { text: 'Project', sectionLink: 'project' },
     { text: 'Contact', sectionLink: 'contact' },
   ];
-  constructor() {
+  constructor(private analytics: AnalyticsService) {
     this.navItems = [];
   }
 
@@ -30,6 +31,7 @@ export class HeaderComponent implements OnInit {
   }
 
   openResume() {
+    this.analytics.logEvent('open_resume', { url: environment.resumeLink });
     window.open(environment.resumeLink, '_blank');
   }
 }
