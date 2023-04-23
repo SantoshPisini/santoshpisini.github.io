@@ -5,13 +5,12 @@
   </div>
   <div class="footer">
     <div class="main-email">
-      <div class="main-email-card">
-        <a href="mailto:santosh_pisini@outlook.com" target="_blank">santosh_pisini@outlook.com</a>
-      </div>
+      <app-link url="mailto:santosh_pisini@outlook.com" label="santosh_pisini@outlook.com" eventType="email"></app-link>
     </div>
     <div class="main-social">
       <div *ngFor="let item of socialLinks">
-        <span class="social-link" (click)="openLink(item)"><fa-icon [icon]="['fab', item.faIcon]"></fa-icon></span>
+        <span class="social-link" (click)="openLink(item)" tabindex="0"><fa-icon
+            [icon]="['fab', item.faIcon]"></fa-icon></span>
       </div>
     </div>
   </div>

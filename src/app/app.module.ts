@@ -21,9 +21,10 @@ import {
   faInstagram,
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
+import { LinkComponent } from './components/link/link.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, AboutComponent],
+  declarations: [AppComponent, HeaderComponent, AboutComponent, LinkComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

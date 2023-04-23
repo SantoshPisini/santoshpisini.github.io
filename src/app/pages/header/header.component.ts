@@ -34,6 +34,14 @@ export class HeaderComponent implements OnInit {
     this.analytics.logEvent('open_resume', { url: environment.resumeLink });
     window.open(environment.resumeLink, '_blank');
   }
+
+  openClipboard() {
+    this.analytics.logEvent('open_app', {
+      label: 'Clipboard',
+      url: 'https://clipboard-ashy.vercel.app',
+    });
+    window.open('https://clipboard-ashy.vercel.app', '_blank');
+  }
 }
 
 interface NavItem {
