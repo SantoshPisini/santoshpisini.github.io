@@ -1,35 +1,26 @@
  .about-container {
-   //  display: flex;
-   //  flex-direction: column;
-   //  height: -webkit-fill-available;
-   //  justify-content: space-evenly;
-   //  align-items: flex-start;
-   //  flex-wrap: wrap;
-   //margin-top: 80%;
+   font-size: 1.3em;
  }
 
  .about-head {
-   font-size: 16px;
    color: var(--grey);
  }
 
  .about-name {
-   font-size: 32px;
+   font-size: 1.8em;
    font-weight: bolder;
    border-bottom: 1px solid var(--orange);
  }
 
  .about-sub {
-   font-size: 16px;
    color: var(--light-grey);
  }
 
  .about-info {
-   font-size: 16px;
    color: var(--grey);
  }
 
  .about-footer {
-  position: absolute;
-  bottom: 128px
+   position: absolute;
+   bottom: 128px
  }

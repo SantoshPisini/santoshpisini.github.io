@@ -10,9 +10,7 @@
 }
 
 .main {
-  padding: 0px 16px;
-  height: 100vh;
-  margin-top: 24px;
+  padding: 24px;
 }
 
 .footer {
@@ -47,13 +45,12 @@ fa-icon {
   gap: 24px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1280px) {
   .main {
-    padding: 0px 172px;
+    padding: 24px 172px;
   }
 
   .main-email {
-    margin-left: -52px;
     letter-spacing: 0.1em;
     font-size: large;
   }
@@ -67,4 +64,10 @@ fa-icon {
     margin-top: 0px;
   }
 
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1281px) {
+  .main {
+    padding: 24px 80px;
+  }
 }
