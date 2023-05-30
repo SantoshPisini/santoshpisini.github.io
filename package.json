@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "prod-build": "ng build --output-path docs"
+    "prod-build": "ng build --output-path docs && node scripts/patch-build.js"
   },
   "private": true,
   "dependencies": {
