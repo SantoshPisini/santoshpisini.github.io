@@ -24,3 +24,30 @@
    position: absolute;
    bottom: 128px
  }
+
+ .open-source {
+   margin-top: 16px;
+
+   li {
+     margin-top: 4px;
+   }
+ }
+
+
+ .tools-built {
+   margin-top: 16px;
+
+   li {
+     margin-top: 4px;
+   }
+ }
+
+ @media screen and (max-width: 600px) {
+   .about-name {
+     font-size: 1.4em;
+   }
+
+   .about-container {
+     font-size: 1.1em;
+   }
+ }
