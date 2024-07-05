@@ -59,15 +59,17 @@ fa-icon {
     flex-direction: row;
   }
 
-
   .main-social {
     margin-top: 0px;
   }
-
 }
 
 @media only screen and (min-width: 767px) and (max-width: 1281px) {
   .main {
     padding: 24px 80px;
   }
+}
+
+.twitter {
+  font-size: 26px;
 }

@@ -21,8 +21,6 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {}
 
   scrollTo(element: any): void {
-    console.log(element);
-
     (document.getElementById(element) as HTMLElement).scrollIntoView({
       behavior: 'smooth',
       block: 'start',
@@ -35,12 +33,15 @@ export class HeaderComponent implements OnInit {
     window.open(environment.resumeLink, '_blank');
   }
 
-  openClipboard() {
+  openEdgeExtension() {
     this.analytics.logEvent('open_app', {
-      label: 'Clipboard',
-      url: 'https://clipboard-ashy.vercel.app',
+      label: 'Label Website',
+      url: 'https://microsoftedge.microsoft.com/addons/detail/einecgnonollbejmbmhbhhaamenfelnh',
     });
-    window.open('https://clipboard-ashy.vercel.app', '_blank');
+    window.open(
+      'https://microsoftedge.microsoft.com/addons/detail/einecgnonollbejmbmhbhhaamenfelnh',
+      '_blank'
+    );
   }
 }
 
