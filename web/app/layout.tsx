@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Header from "@/components/site/Header";
 import BannerSection from "@/components/site/BannerSection";
+import SiteScripts from "@/components/scripts/SiteScripts";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <SiteScripts />
       <body
         className={cn(
           "min-h-screen bg-background antialiased mb-40",
