@@ -1,8 +1,7 @@
 import Image from "next/image";
 import HeadShotImage from "../../public/images/headshot.jpeg";
 import ExternalLink from "./ExternalLink";
-import { Button } from "../ui/button";
-import { GithubIcon, LinkedinIcon } from "lucide-react";
+import ContactLinks from "./ContactLinks";
 
 export default function HeroSection() {
   return (
@@ -16,36 +15,7 @@ export default function HeroSection() {
           <p className="text-muted-foreground text-lg md:text-2xl lg:text-4xl">
             {"Engineer | Developer | Designer"}
           </p>
-          <div className="flex gap-4">
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={() => {
-                window.open("https://www.linkedin.com/in/santoshpisini");
-              }}
-            >
-              <LinkedinIcon />
-            </Button>
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={() => {
-                window.open("https://github.com/santoshpisini");
-              }}
-            >
-              <GithubIcon />
-            </Button>
-            <Button
-              variant="outline"
-              size="icon"
-              className="text-2xl font-semibold"
-              onClick={() => {
-                window.open("https://x.com/santosh_pisini");
-              }}
-            >
-              𝕏
-            </Button>
-          </div>
+          <ContactLinks />
         </div>
         <div className="w-[50vw] md:w-[15vw] max-w-[128px] md:max-w-[256px]">
           <Image

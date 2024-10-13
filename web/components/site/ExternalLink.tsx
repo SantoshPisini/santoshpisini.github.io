@@ -8,11 +8,11 @@ export default function ExternalLink(props: ExternalLinkProps) {
       variant="link"
       className="text-blue-500 md:text-xl p-0 m-0 group tracking-wide"
       onClick={() => {
-        window.location.href = props.url;
+        window.open(props.url, "_blank", "noopener,noreferrer");
       }}
     >
       {props.label}
-      <ExternalLinkIcon className="ml-2 hidden group-hover:block" />
+      <ExternalLinkIcon className="ml-2 invisible group-hover:visible" />
     </Button>
   );
 }
